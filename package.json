@@ -1,0 +1,27 @@
+{
+  "name": "study_hoc",
+  "version": "1.0.0",
+  "description": "study hoc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danyunLu/study_hoc.git"
+  },
+  "keywords": [
+    "hoc"
+  ],
+  "author": "ludanyun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danyunLu/study_hoc/issues"
+  },
+  "homepage": "https://github.com/danyunLu/study_hoc#readme",
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-router": "^4.3.1"
+  }
+}
