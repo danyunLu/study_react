@@ -1,0 +1,24 @@
+/**
+ *babel:js的编译器,可以将es6转为可以让低版本识别的es5
+*/
+
+{
+    //presets:预设就是一系列插件的集合，就好像修图一样，把上次修图的一些参数保存为一个预设，下次就能直接使用
+    //如果要转译的语法不止ES6，还有各个提案阶段的语法也想体验
+    //"presets": ["es2015","react"],
+    //preset官方现在推荐使用babel-preset-env，可以更加详细的按照浏览器版本来配置等等
+    "presets": ["env","es2015","stage-0","react"],
+    
+    //plugins:babel中的插件，通过配置不同的插件才能告诉babel，我们的代码中有哪些是需要转译的
+    "plugins": [
+        //如果我们在代码中使用Object.assign方法，就用如下插件
+        "transform-object-assign",
+        //如果要为某个插件添加配置项，按如下写法,改为数组，第二个元素为配置项
+        //["transform-es2015-arrow-functions", { "spec": true }],
+        ["transform-runtime", {
+            "helpers": true, //自动引入helpers
+            "polyfill": true, //自动引入polyfill（core-js提供的polyfill）
+            "regenerator": true //自动引入regenerator
+        }]
+    ]
+}
