@@ -1,10 +1,9 @@
-function component() {
-    var element = document.createElement('div');
-  
-    // Lodash（目前通过一个 script 脚本引入）对于执行这一行是必需的
-    element.innerHTML = "hello webpack";
-  
-    return element;
-  }
-  
-  document.body.appendChild(component());
+import React from 'react';
+import ReactDom from 'react-dom';
+import { RouterComponent} from './router.jsx';
+// import { HomeComponent  } from './modules/home';
+
+ReactDom.render(
+  <RouterComponent />,
+  document.getElementById('application')
+)

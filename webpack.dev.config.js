@@ -1,7 +1,8 @@
 const merge = require("webpack-merge");
 const commonConfig = require("./webpack.common.config");
 const path = require('path');
-
+const loaders = require('./webpack/loaders');
+console.log(loaders);
 const devConfig = {
     devtool: "inline-source-map",//调试  
     mode:"development",  
@@ -22,6 +23,9 @@ const devConfig = {
         // compress: true,
         historyApiFallback: true,
         port: 9000
+    },
+    module:{
+        rules:loaders
     }
 }
 module.exports = merge(commonConfig, devConfig)

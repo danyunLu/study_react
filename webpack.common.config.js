@@ -16,19 +16,22 @@ const commonConfig = {
         publicPath: "/"
     },
     plugins: [
-      //
-      new HtmlWebpackPlugin({
-          filename: 'index.html',
-          template: path.join(__dirname, 'src/index.html')
-      }),
-      // new webpack.HashedModuleIdsPlugin(),
-      // //公共库缓存
-      // new webpack.optimize.CommonsChunkPlugin({
-      //     name: 'vendor'
-      // }),
-      // new webpack.optimize.CommonsChunkPlugin({
-      //     name: 'runtime'
-      // }),
-  ],
+        //
+        new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: path.join(__dirname, 'src/index.html')
+        }),
+        // new webpack.HashedModuleIdsPlugin(),
+        // //公共库缓存
+        // new webpack.optimize.CommonsChunkPlugin({
+        //     name: 'vendor'
+        // }),
+        // new webpack.optimize.CommonsChunkPlugin({
+        //     name: 'runtime'
+        // }),
+    ],
+    resolve: {
+        extensions: ['.js', '.json', '.jsx']
+    }
 };
 module.exports = commonConfig;
