@@ -1,0 +1,42 @@
+@import './common.scss';
+
+$nameWidth:40%;
+$valueWidth:60%;
+
+.product-row-name,.product-row-value{
+    font-size: 16px;
+    font-weight: bold;
+}
+.product-row-name{
+    display: inline-block;
+    width: $nameWidth;
+}
+.product-row-value{
+    display: inline-block;
+    width: $valueWidth;
+    color: $normal;
+}
+
+.product-category{
+    color: $normal;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.title-name,.title-value{
+    font-size: 18px;
+    color: $normal;
+    font-weight: bold;
+}
+.title-name{
+    display: inline-block;
+    width: $nameWidth;
+}
+.title-value{
+    display: inline-block;
+    width: $valueWidth;
+}
+
+.main-body{
+    width: 400px;
+}

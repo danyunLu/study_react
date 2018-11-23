@@ -1,5 +1,9 @@
 import React from 'react';
 import { Clock, LoginControl, NameForm, FlavorForm, Reservation } from '../pages/test';
+import { Calcultor } from '../pages/study.one';
+import { SignUpDialog } from '../pages/study.two';
+import { FilterableProductTable } from '../pages/study.three';
+
 export const HomeComponent = () => {
     return (
         <div>
@@ -16,6 +20,15 @@ export const HomeComponent = () => {
             <br />
             <br />
             <Reservation />
+            <br />
+            <br />
+            <Calcultor />
+            <br />
+            <br />
+            <SignUpDialog />
+            <br />
+            <br />
+            <FilterableProductTable />
         </div>
     )
 }
